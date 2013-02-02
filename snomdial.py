@@ -5,6 +5,7 @@
 def clean_numer(number):
     import re
     number = re.sub(' +', '', number)
+    number = re.sub('[^\d.]+', '', number)
     numr = re.compile("^(\+)?(\d+)$")
     m = numr.match(number)
     if m:
@@ -12,7 +13,8 @@ def clean_numer(number):
         if pls:
             pls = '00'
         else:
-            pls = ''
+            #use US std
+            pls = '001'
         return pls + number
 
 
