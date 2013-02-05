@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 
-def clean_numer(number):
+def clean_number(number):
     import re
     number = re.sub(' +', '', number)
     number = re.sub('[^\d.]+', '', number)
@@ -52,7 +52,7 @@ def main():
     (options, args) = parser.parse_args()
     if options.host and options.user and options.pwd and options.number:
         dial_with_snom(options.host, options.user, options.pwd,
-                       clean_numer(options.number))
+                       clean_number(options.number))
     else:
         parser.print_help()
 
