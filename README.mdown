@@ -8,4 +8,4 @@ will dial <number to dial> using snom.
 
     make install
 
-install's osx adressbook plugin
+install's osx adressbook plugin, and add's Dial with Snom to services menu
