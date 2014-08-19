@@ -3,11 +3,7 @@ from Foundation import *
 from AppKit import *
 import objc
 from snomdial import dial_with_snom
-
-HOST = ""
-USER = ""
-PWD = ""
-CCODE = "US"
+from config import HOST, USER, PWD, CCODE
 
 
 def serviceSelector(fn):

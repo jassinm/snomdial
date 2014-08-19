@@ -24,5 +24,6 @@ setup(
     name='SnomDial Service',
     app=["osx_snom_service.py"],
     options=dict(py2app=dict(plist=plist,
+                             site_packages=True,
                              packages=["snomdial"])),
 )

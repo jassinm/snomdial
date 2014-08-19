@@ -15,6 +15,8 @@ setup(
     data_files=[],
     options=dict(py2app=dict(
         extension=".bundle",
+        site_packages=True,
+        includes=["phonenumbers"],
         packages=["snomdial"],
         plist=infoPlist,
     )),
