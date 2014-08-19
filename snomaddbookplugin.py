@@ -2,9 +2,6 @@ from AddressBook import *
 from AppKit import *
 from snomdial import dial_with_snom
 from config import HOST, USER, PWD, CCODE
-from phonenumbers import PhoneMetadata
-
-PhoneMetadata.load_all()
 
 
 class PySnomAddressBookDial(NSObject):

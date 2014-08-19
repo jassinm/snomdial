@@ -15,6 +15,10 @@ configure:
 	sed  -i '' 's/^CCODE.*/CCODE="'$$CCODE'"/' ./config.py
 
 
+clean:
+	rm -rf build
+	rm -rf dist
+
 
 install: init
 	/usr/bin/python setup.py install
