@@ -5,6 +5,7 @@ snomdial
 
 
 will dial <number to dial> using snom.
-replace's ++ with 00 and removes whitespaces.
 
-on osx add to services using automator to dial from mail, text, ....
+    make install
+
+install's osx adressbook plugin
